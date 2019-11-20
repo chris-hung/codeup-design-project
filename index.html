@@ -9,47 +9,80 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+        /*fonts*/
+        @import url('https://fonts.googleapis.com/css?family=Abel|Anton&display=swap');
+        /*body class*/
         #custom-body {
             background-color: #F0F0F0;
         }
+        /*logo*/
+        #logo-row{
+            background: linear-gradient(to bottom, rgba(240,240,240,1) 0%,rgba(240,240,240,1) 25%,rgba(255,255,255,1) 26%,rgba(255,255,255,1) 74%,rgba(240,240,240,1) 75%,rgba(240,240,240,1) 100%);
+        }
+        /*abel font items*/
+        .abel-text {
+            font-family: abel, sans-serif;
+        }
 
+        /*anton font items*/
+        .anton-text {
+            font-family: anton, sans-serif;
+        }
 
     </style>
     <title>Hello, world!</title>
 </head>
 <body id="custom-body">
 
-    <div class="container text-center">
-        <div class="row" id="logo-row">
-            <div class="col-12 ">
-                <img src="img/logo.jpg" alt="logo" height="105px" width="105px" class="rounded-circle"/>
-            </div>
+<div class="container text-center">
+    <div class="row bg-white" id="logo-row">
+        <div class="col-12">
+            <img src="img/logo.jpg" alt="logo" height="105px" width="105px" class="rounded-circle"/>
         </div>
-        <div class="row" id="codeup-row">
-            <div class="col-12">
-                <h2>codeup design</h2>
-            </div>
+    </div>
+    <div class="row" id="codeup-row">
+        <div class="col-12 abel-text">
+            <h2>codeup design</h2>
         </div>
-        <div class="row" id="nav-links-row">
-            <div class="col-3">
-                <a class="nav-link" href="#">SERVICES</a>
-            </div>
-            <div class="col-3">
-                <a class="nav-link" href="#">WORK</a>
-            </div>
-            <div class="col-3">
-                <a class="nav-link" href="#">BLOG</a>
-            </div>
-            <div class="col-3">
-                <a class="nav-link" href="#">CONTACT</a>
-            </div>
+    </div>
+    <div class="row" id="nav-links-row">
+        <div class="col-3">
+            <a class="nav-link abel-text text-dark" href="#">SERVICES</a>
         </div>
-        <div class="row" id="title-row">
+        <div class="col-3">
+            <a class="nav-link abel-text text-dark" href="#">WORK</a>
+        </div>
+        <div class="col-3">
+            <a class="nav-link abel-text text-dark" href="#">BLOG</a>
+        </div>
+        <div class="col-3">
+            <a class="nav-link abel-text text-dark" href="#">CONTACT</a>
+        </div>
+    </div>
+    <div class="row" id="title-row">
+    </div>
+</div>
+<br>
+<div class="row text-center" id="main-header">
+        <div class="col-12">
+            <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        </div>
+    </div>
+<br>
+    <div class="row" id="second-header">
+        <div class="col-12 text-center anton-text">
+            <h2>FROM PARK CITY, UTAH</h2>
+        </div>
+    </div>
+<br>
+    <div class="row text-center mt-3" id="color-circles">
+            <div class="col-6" id="circle-red">DESIGN</div>
+            <div class="col-6" id="circle-yellow">DESIGN</div>
 
-        </div>
+
+
 
     </div>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
