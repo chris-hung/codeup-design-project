@@ -11,14 +11,25 @@
     <style>
         /*fonts*/
         @import url('https://fonts.googleapis.com/css?family=Abel|Anton&display=swap');
+
+        :root {
+            --main-bg-color: #F0F0F0;
+            --main-red-color: #E6563B;
+            --main-yellow-color: #EB9D3A;
+            --main-green-color: #7CB06C;
+            --main-blue-color: #00ABA9;
+        }
+
         /*body class*/
         #custom-body {
-            background-color: #F0F0F0;
+            background-color: var(--main-bg-color)
         }
+
         /*logo*/
-        #logo-row{
-            background: linear-gradient(to bottom, rgba(240,240,240,1) 0%,rgba(240,240,240,1) 25%,rgba(255,255,255,1) 26%,rgba(255,255,255,1) 74%,rgba(240,240,240,1) 75%,rgba(240,240,240,1) 100%);
+        #logo-row {
+            background: linear-gradient(to bottom, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 25%, rgba(255, 255, 255, 1) 26%, rgba(255, 255, 255, 1) 74%, rgba(240, 240, 240, 1) 75%, rgba(240, 240, 240, 1) 100%);
         }
+
         /*abel font items*/
         .abel-text {
             font-family: abel, sans-serif;
@@ -28,6 +39,33 @@
         .anton-text {
             font-family: anton, sans-serif;
         }
+
+        /*red circle*/
+        #circle-red {
+            background-color: var(--main-red-color);
+            /*width: 50px;*/
+            /*height: 50px;*/
+            /*!*padding: 7px 10px;*!*/
+            border-radius: 50%;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        /*yellow circle*/
+        #circle-yellow {
+
+        }
+
+        /*green circle*/
+        #circle-green {
+
+        }
+
+        /*blue circle*/
+        #circle-blue {
+
+        }
+
 
     </style>
     <title>Hello, world!</title>
@@ -64,25 +102,24 @@
 </div>
 <br>
 <div class="row text-center" id="main-header">
-        <div class="col-12">
-            <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-        </div>
+    <div class="col-12">
+        <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
     </div>
+</div>
 <br>
-    <div class="row" id="second-header">
-        <div class="col-12 text-center anton-text">
-            <h2>FROM PARK CITY, UTAH</h2>
-        </div>
+<div class="row" id="second-header">
+    <div class="col-12 text-center anton-text">
+        <h2>FROM PARK CITY, UTAH</h2>
     </div>
+</div>
 <br>
-    <div class="row text-center mt-3" id="color-circles">
-            <div class="col-6" id="circle-red">DESIGN</div>
-            <div class="col-6" id="circle-yellow">DESIGN</div>
+<div class="row text-center mt-3" id="color-circles">
+    <button type="button" class="btn btn-primary btn-circle btn-md col-6" id="circle-red">DESIGN</button>
+    <div class="col-6" id="circle-yellow">DESIGN</div>
+    <div class="col-6" id="circle-green">DESIGN</div>
+    <div class="col-6" id="circle-blue">DESIGN</div>
+</div>
 
-
-
-
-    </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
