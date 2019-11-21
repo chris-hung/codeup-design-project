@@ -78,7 +78,7 @@
         }
 
         /*little red circle*/
-        #little-circle-red {
+        .little-circle-red {
             background-color: var(--main-red-color);
             width: 20px;
             height: 20px;
@@ -88,7 +88,7 @@
         }
 
         /*little yellow circle*/
-        #little-circle-yellow {
+        .little-circle-yellow {
             background-color: var(--main-yellow-color);
             width: 20px;
             height: 20px;
@@ -98,7 +98,7 @@
         }
 
         /*little green circle*/
-        #little-circle-green {
+        .little-circle-green {
             background-color: var(--main-green-color);
             width: 20px;
             height: 20px;
@@ -108,7 +108,7 @@
         }
 
         /*little blue circle*/
-        #little-circle-blue {
+        .little-circle-blue {
             background-color: var(--main-blue-color);
             width: 20px;
             height: 20px;
@@ -116,11 +116,13 @@
             font-family: anton, sans-serif;
             font-size: xx-small;
         }
-        #color-circles-row-1 a , #color-circles-row-2 a {
+
+        #color-circles-row-1 a, #color-circles-row-2 a {
             color: white;
             font-family: anton, sans-serif;
         }
-        #color-circles-row-1 a:hover , #color-circles-row-2 a:hover {
+
+        #color-circles-row-1 a:hover, #color-circles-row-2 a:hover {
             cursor: pointer;
         }
 
@@ -129,8 +131,14 @@
             border: 7px solid var(--main-darkgrey-color);
             padding: 0;
         }
+
         #nav-links-row a {
             font-size: smaller;
+        }
+
+        .custom-card {
+            background-color: var(--main-bg-color);
+            border: none;
         }
 
 
@@ -140,11 +148,11 @@
 <body id="custom-body">
 <div class="container-fluid text-center ">
     <div class="row" id="logo-row">
-<!--        xs heading-->
+        <!--        xs heading-->
         <div class="col-12 d-sm-none">
             <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
         </div>
-<!--        sm heading-->
+        <!--        sm heading-->
         <div class="container d-none d-sm-block d-md-none">
             <nav class="navbar navbar-expand-large d-flex justify-content-around">
                 <a class="abel-text text-dark p-1" href="#">SERVICES</a>
@@ -186,64 +194,101 @@
         </div>
     </div>
     <br>
-    <div class="container">
+
+    <!--    buttons for small view-->
+    <div class="container d-block d-sm-none d-md-none d-lg-none d-xl-none">
         <div class="row mx-auto no-gutters" id="color-circles-row-1">
-        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0" id="circle-red">
-            <a href="#">DESIGN</a>
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
+                 id="circle-red">
+                <a href="#">DESIGN</a>
+            </div>
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
+                 id="circle-yellow">
+                <a href="#">DEVELOP</a>
+            </div>
         </div>
-        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0" id="circle-yellow">
-            <a href="#">DEVELOP</a>
+        <div class="row mx-auto no-gutters" id="color-circles-row-2">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
+                 id="circle-green">
+                <a href="#">SUPPORT</a>
+            </div>
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
+                 id="circle-blue">
+                <a href="#">HOST</a>
+            </div>
         </div>
     </div>
-    <div class="row mx-auto no-gutters" id="color-circles-row-2">
-        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="circle-green">
-            <a href="#">SUPPORT</a>
-        </div>
-        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="circle-blue">
-            <a href="#">HOST</a>
+
+    <!--    buttons for small, medium, large, x-large views-->
+    <div class="container d-none d-sm-block d-md-block d-lg-block d-xl-block">
+        <div class="row mx-auto no-gutters" id="color-circles-row-1">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
+                 id="circle-red">
+                <a href="#">DESIGN</a>
+            </div>
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
+                 id="circle-yellow">
+                <a href="#">DEVELOP</a>
+            </div>
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
+                 id="circle-green">
+                <a href="#">SUPPORT</a>
+            </div>
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
+                 id="circle-blue">
+                <a href="#">HOST</a>
+            </div>
         </div>
     </div>
-    </div>
+    <hr class="d-none d-sm-block d-md-block d-lg-block d-xl-block">
     <br>
     <br>
     <br>
     <div class="row text-center" id="selected-work-row">
         <p class="col-12 abel-text">SELECTED WORK</p>
     </div>
-    
-    <div class="row text-center" id="image-row">
-        <img src="img/apple-ipad.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
-    </div>
-    <div class="row text-center" id="icon-rows">
-        <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
-        <p class="col-1"></p>
-        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-red">
-        D
-        </div>
-        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-yellow">
-        D
-        </div>
-        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-green">
-        S
-        </div>
-        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-blue">
-        H
-        </div>
-        <p class="col-1"></p>
+
+    <!--    x-small view for images-->
+    <div class="container d-sm-none d-md-none">
+
+
     </div>
 
-</div>
+    <div class="card custom-card">
+        <div class="row text-center" id="image-row">
+            <img src="img/apple-ipad.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
+        </div>
+        <div class="card-body">
+            <div class="row text-center" id="icon-rows">
+                <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
+                <p class="col-1"></p>
+                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
+                    D
+                </div>
+                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-yellow">
+                    D
+                </div>
+                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-green">
+                    S
+                </div>
+                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-blue">
+                    H
+                </div>
+                <p class="col-1"></p>
+            </div>
+        </div>
+    </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 </html>
