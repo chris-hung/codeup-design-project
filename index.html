@@ -127,6 +127,10 @@
             border: 7px solid var(--main-darkgrey-color);
             padding: 0;
         }
+        #nav-links-row a {
+            font-size: smaller;
+        }
+
 
 
     </style>
@@ -135,7 +139,7 @@
 <body id="custom-body">
 
 <div class="container text-center">
-    <div class="row bg-white" id="logo-row">
+    <div class="row" id="logo-row">
         <div class="col-12">
             <img src="img/logo.jpg" alt="logo" height="105px" width="105px" class="rounded-circle"/>
         </div>
@@ -145,18 +149,12 @@
             <h2>codeup design</h2>
         </div>
     </div>
-    <div class="row" id="nav-links-row">
-        <div class="col-3">
-            <a class="nav-link abel-text text-dark" href="#">SERVICES</a>
-        </div>
-        <div class="col-3">
-            <a class="nav-link abel-text text-dark" href="#">WORK</a>
-        </div>
-        <div class="col-3">
-            <a class="nav-link abel-text text-dark" href="#">BLOG</a>
-        </div>
-        <div class="col-3">
-            <a class="nav-link abel-text text-dark" href="#">CONTACT</a>
+    <div class="row no-gutters" id="nav-links-row">
+        <div class="col-10 offset-1 no-gutters">
+            <a class="col-3 abel-text text-dark" href="#">SERVICES</a>
+            <a class="col-3 abel-text text-dark" href="#">WORK</a>
+            <a class="col-3 abel-text text-dark" href="#">BLOG</a>
+            <a class="col-3 abel-text text-dark" href="#">CONTACT</a>
         </div>
     </div>
     <br>
