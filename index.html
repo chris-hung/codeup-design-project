@@ -86,6 +86,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
+            padding-bottom: .2em;
         }
 
         /*little yellow circle*/
@@ -96,6 +97,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
+            padding-bottom: .2em;
         }
 
         /*little green circle*/
@@ -106,6 +108,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
+            padding-bottom: .2em;
         }
 
         /*little blue circle*/
@@ -116,6 +119,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
+            padding-bottom: .2em;
         }
 
         .color-circles-row-1 a, .color-circles-row-2 a {
@@ -146,7 +150,15 @@
             border: none;
         }
 
+        .card-img {
+            height: 46px;
+            width: 46px;
+        }
 
+        .feature-text {
+            font-size: x-small;
+            padding-left: 0;
+        }
     </style>
     <title>Codeup Design!</title>
 </head>
@@ -172,14 +184,14 @@
         <!--        md lg xl heading-->
         <div class="container d-none d-sm-none d-md-block">
             <div class="row d-flex">
-                <div class="col-10">
+                <div class="col-12">
                     <nav class="container-fluid navbar navbar-expand-large">
                         <a class="navbar-brand col-6" href="#">
                             <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
                             <h2 class="d-inline text-dark abel-text pl-3">codeup design</h2>
                         </a>
                         <p class="col-1"></p>
-                        <a class="col-1 abel-text text-dark p-1 ml-auto" href="#">SERVICES</a>
+                        <a class="col-1 abel-text text-dark p-1 " href="#">SERVICES</a>
                         <a class="col-1 abel-text text-dark p-1" href="#">WORK</a>
                         <a class="col-1 abel-text text-dark p-1" href="#">BLOG</a>
                         <a class="col-1 abel-text text-dark p-1" href="#">CONTACT</a>
@@ -276,10 +288,10 @@
                         <div class="row text-center image-row">
                             <img src="img/apple-ipad.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body pt-1">
                             <div class="row text-center icon-rows">
-                                <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
-                                <p class="col-1"></p>
+                                <p class="col-6 abel-text feature-text">FEATURED PROJECT</p>
+                                <p class="col-1 p-0"></p>
                                 <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
                                     D
                                 </div>
@@ -301,10 +313,10 @@
                         <div class="row text-center image-row">
                             <img src="img/macbook.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body pt-1">
                             <div class="row text-center icon-rows">
-                                <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
-                                <p class="col-1"></p>
+                                <p class="col-6 abel-text feature-text">FEATURED PROJECT</p>
+                                <p class="col-1 p-0"></p>
                                 <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
                                     D
                                 </div>
@@ -326,10 +338,10 @@
                         <div class="row text-center image-row">
                             <img src="img/man.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body pt-1">
                             <div class="row text-center icon-rows">
-                                <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
-                                <p class="col-1"></p>
+                                <p class="col-6 abel-text feature-text">FEATURED PROJECT</p>
+                                <p class="col-1 p-0"></p>
                                 <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
                                     D
                                 </div>
@@ -351,10 +363,10 @@
                         <div class="row text-center image-row">
                             <img src="img/security.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body pt-1">
                             <div class="row text-center icon-rows">
-                                <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
-                                <p class="col-1"></p>
+                                <p class="col-6 abel-text feature-text">FEATURED PROJECT</p>
+                                <p class="col-1 p-0"></p>
                                 <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
                                     D
                                 </div>
@@ -381,7 +393,7 @@
             <div class="card custom-card mb-3">
                 <div class="row no-gutters">
 
-                    <div class="card-body">
+                    <div class="card-body pr-0">
                         <!--                    card 1/phone card-->
                         <div class="card custom-card mb-3">
                             <div class="row no-gutters">
@@ -389,8 +401,8 @@
                                     <img src="img/mobile-phone.jpg" class="card-img" alt="a photo of a phone">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body p-0 pl-3">
-                                        <h5 class="card-title anton-text">THE ADMIN BAR AND ABSOLUTE POSITIONING</h5>
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title anton-text">THE ADMIN BAR AND ABSOLUTE POSITIONING</h6>
                                     </div>
                                 </div>
                             </div>
@@ -402,8 +414,8 @@
                                     <img src="img/head.jpg" class="card-img" alt="a photo of a phone">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body p-0 pl-3">
-                                        <h5 class="card-title anton-text">NIBBLER AWESOME WEBSITE TESTING</h5>
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title anton-text">NIBBLER AWESOME WEBSITE TESTING</h6>
                                     </div>
                                 </div>
                             </div>
@@ -416,12 +428,14 @@
                                     <img src="img/ipad.jpg" class="card-img" alt="a photo of a phone">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body p-0 pl-3">
-                                        <h5 class="card-title anton-text">HOW TO GET GOOGLE TO LIKE YOU</h5>
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title anton-text">HOW TO GET GOOGLE TO LIKE YOU</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <br>
 
                         <!--card 4/twitter card-->
                         <div class="card custom-card">
