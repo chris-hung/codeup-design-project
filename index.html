@@ -81,14 +81,56 @@
             color: white;
         }
 
+        /*little red circle*/
+        #little-circle-red {
+            background-color: var(--main-red-color);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+        }
+
+        /*little yellow circle*/
+        #little-circle-yellow {
+            background-color: var(--main-yellow-color);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+        }
+
+        /*little green circle*/
+        #little-circle-green {
+            background-color: var(--main-green-color);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+        }
+
+        /*little blue circle*/
+        #little-circle-blue {
+            background-color: var(--main-blue-color);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+        }
+
+
+
         #image-row img {
-            /*border: 7px solid var(--main-darkgrey-color);*/
+            border: 7px solid var(--main-darkgrey-color);
             padding: 0;
         }
 
 
     </style>
-    <title>Hello, world!</title>
+    <title>Codeup Design!</title>
 </head>
 <body id="custom-body">
 
@@ -126,7 +168,7 @@
     <br>
     <div class="row" id="second-header">
         <div class="col-12 text-center anton-text">
-            <h2>FROM PARK CITY, UTAH</h2>
+            <h3>FROM PARK CITY, UTAH</h3>
         </div>
     </div>
     <br>
@@ -151,10 +193,26 @@
         <p class="col-12 abel-text">SELECTED WORK</p>
     </div>
     
-    <div class="row" id="image-row">
-        <img src="img/apple-ipad.jpg" alt="" class="col-12 rounded ml-4 mr-4">
+    <div class="row text-center" id="image-row">
+        <img src="img/apple-ipad.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
     </div>
-
+    <div class="row text-center" id="icon-rows">
+        <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
+        <p class="col-1"></p>
+        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-red">
+        D
+        </div>
+        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-yellow">
+        D
+        </div>
+        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-green">
+        S
+        </div>
+        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="little-circle-blue">
+        H
+        </div>
+        <p class="col-1"></p>
+    </div>
 
 </div>
 
