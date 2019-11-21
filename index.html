@@ -42,7 +42,7 @@
         }
 
         /*red circle*/
-        #circle-red {
+        .circle-red {
             background-color: var(--main-red-color);
             width: 105px;
             height: 105px;
@@ -51,7 +51,7 @@
         }
 
         /*yellow circle*/
-        #circle-yellow {
+        .circle-yellow {
             background-color: var(--main-yellow-color);
             width: 105px;
             height: 105px;
@@ -60,7 +60,7 @@
         }
 
         /*green circle*/
-        #circle-green {
+        .circle-green {
             background-color: var(--main-green-color);
             width: 105px;
             height: 105px;
@@ -69,7 +69,7 @@
         }
 
         /*blue circle*/
-        #circle-blue {
+        .circle-blue {
             background-color: var(--main-blue-color);
             width: 105px;
             height: 105px;
@@ -117,19 +117,23 @@
             font-size: xx-small;
         }
 
-        #color-circles-row-1 a, #color-circles-row-2 a {
+        .color-circles-row-1 a, .color-circles-row-2 a {
             color: white;
             font-family: anton, sans-serif;
         }
 
-        #color-circles-row-1 a:hover, #color-circles-row-2 a:hover {
+        .color-circles-row-1 a:hover, .color-circles-row-2 a:hover {
             cursor: pointer;
         }
 
 
-        #image-row img {
+        .image-row img {
             border: 7px solid var(--main-darkgrey-color);
             padding: 0;
+        }
+
+        .icon-rows {
+
         }
 
         #nav-links-row a {
@@ -164,13 +168,32 @@
                 <a class="abel-text text-dark p-1" href="#">CONTACT</a>
             </nav>
         </div>
+<!--        md lg xl heading-->
+        <div class="container d-none d-sm-none d-md-block">
+            <nav class="navbar navbar-expand-large d-flex justify-content-around">
+                <div class="row">
+                    <a class="navbar-brand col-2" href="#">
+                        <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
+                    </a>
+                <h2 class="col-2 abel-text col-2">codeup design</h2>
+                <p class="col-1"></p>
+                <p class="col-1"></p>
+                <p class="col-1"></p>
+                <p class="col-1"></p>
+                <a class="col-1 abel-text text-dark p-1" href="#">SERVICES</a>
+                <a class="col-1 abel-text text-dark p-1" href="#">WORK</a>
+                <a class="col-1 abel-text text-dark p-1" href="#">BLOG</a>
+                <a class="col-1 abel-text text-dark p-1" href="#">CONTACT</a>
+            </div>
+            </nav>
+        </div>
     </div>
 </div>
 <div class="container text-center">
 
     <div class="row" id="codeup-row">
         <div class="col-12 abel-text">
-            <h2>codeup design</h2>
+            <h2 class="d-block d-sm-block d-md-none">codeup design</h2>
         </div>
     </div>
     <div class="row no-gutters d-sm-none" id="nav-links-row">
@@ -197,23 +220,19 @@
 
     <!--    buttons for small view-->
     <div class="container d-block d-sm-none d-md-none d-lg-none d-xl-none">
-        <div class="row mx-auto no-gutters" id="color-circles-row-1">
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
-                 id="circle-red">
+        <div class="row mx-auto no-gutters color-circles-row-1">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0 circle-red">
                 <a href="#">DESIGN</a>
             </div>
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
-                 id="circle-yellow">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0 circle-yellow">
                 <a href="#">DEVELOP</a>
             </div>
         </div>
-        <div class="row mx-auto no-gutters" id="color-circles-row-2">
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
-                 id="circle-green">
+        <div class="row mx-auto no-gutters color-circles-row-2">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1 circle-green">
                 <a href="#">SUPPORT</a>
             </div>
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
-                 id="circle-blue">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1 circle-blue">
                 <a href="#">HOST</a>
             </div>
         </div>
@@ -221,21 +240,17 @@
 
     <!--    buttons for small, medium, large, x-large views-->
     <div class="container d-none d-sm-block d-md-block d-lg-block d-xl-block">
-        <div class="row mx-auto no-gutters" id="color-circles-row-1">
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
-                 id="circle-red">
+        <div class="row mx-auto no-gutters color-circles-row-1">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0 circle-red">
                 <a href="#">DESIGN</a>
             </div>
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0"
-                 id="circle-yellow">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center p-0 circle-yellow">
                 <a href="#">DEVELOP</a>
             </div>
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
-                 id="circle-green">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1 circle-green">
                 <a href="#">SUPPORT</a>
             </div>
-            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1"
-                 id="circle-blue">
+            <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1 circle-blue">
                 <a href="#">HOST</a>
             </div>
         </div>
@@ -248,35 +263,114 @@
         <p class="col-12 abel-text">SELECTED WORK</p>
     </div>
 
-    <!--    x-small view for images-->
-    <div class="container d-sm-none d-md-none">
 
+    <div class=container">
+        <div class="row">
 
-    </div>
-
-    <div class="card custom-card">
-        <div class="row text-center" id="image-row">
-            <img src="img/apple-ipad.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
-        </div>
-        <div class="card-body">
-            <div class="row text-center" id="icon-rows">
-                <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
-                <p class="col-1"></p>
-                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
-                    D
+            <!--    card 1-->
+            <div class="col-12 col-sm-6 card custom-card">
+                <div class="row text-center image-row">
+                    <img src="img/apple-ipad.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
                 </div>
-                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-yellow">
-                    D
+                <div class="card-body">
+                    <div class="row text-center icon-rows">
+                        <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
+                        <p class="col-1"></p>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-yellow">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-green">
+                            S
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-blue">
+                            H
+                        </div>
+                        <p class="col-1"></p>
+                    </div>
                 </div>
-                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-green">
-                    S
-                </div>
-                <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-blue">
-                    H
-                </div>
-                <p class="col-1"></p>
             </div>
+            <!--        card 2-->
+            <div class="d-none d-sm-block col-sm-6 card custom-card">
+                <div class="row text-center image-row">
+                    <img src="img/macbook.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
+                </div>
+                <div class="card-body">
+                    <div class="row text-center icon-rows">
+                        <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
+                        <p class="col-1"></p>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-yellow">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-green">
+                            S
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-blue">
+                            H
+                        </div>
+                        <p class="col-1"></p>
+                    </div>
+                </div>
+            </div>
+            <!--            card 3-->
+            <div class="d-none d-sm-block col-12 col-sm-6 card custom-card">
+                <div class="row text-center image-row">
+                    <img src="img/man.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
+                </div>
+                <div class="card-body">
+                    <div class="row text-center icon-rows">
+                        <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
+                        <p class="col-1"></p>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-yellow">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-green">
+                            S
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-blue">
+                            H
+                        </div>
+                        <p class="col-1"></p>
+                    </div>
+                </div>
+            </div>
+            <!--card 4-->
+            <div class="d-none d-sm-block col-12 col-sm-6 card custom-card">
+                <div class="row text-center image-row">
+                    <img src="img/security.jpg" alt="" class="img-fluid col-10 mx-auto rounded">
+                </div>
+                <div class="card-body">
+                    <div class="row text-center icon-rows">
+                        <p class="col-6 abel-text align-center">FEATURED PROJECT</p>
+                        <p class="col-1"></p>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-red">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-yellow">
+                            D
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-green">
+                            S
+                        </div>
+                        <div class="col-1half mx-auto anton-text d-flex align-items-center justify-content-center m-1 little-circle-blue">
+                            H
+                        </div>
+                        <p class="col-1"></p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
     </div>
 
     <!-- Optional JavaScript -->
@@ -290,5 +384,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
