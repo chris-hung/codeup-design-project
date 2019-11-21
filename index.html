@@ -14,6 +14,7 @@
 
         :root {
             --main-bg-color: #F0F0F0;
+            --main-darkgrey-color: #e6e6e6;
             --main-red-color: #E6563B;
             --main-yellow-color: #EB9D3A;
             --main-green-color: #7CB06C;
@@ -43,33 +44,46 @@
         /*red circle*/
         #circle-red {
             background-color: var(--main-red-color);
-            width: 100%;
-            height: 100%;
-            padding: 7px 10px;
+            width: 105px;
+            height: 105px;
             border-radius: 50%;
-            font-size: 10px;
-            text-align: center;
-
+            border: .5em solid white;
+            color: white;
         }
-
-        #custom-body #color-circles {
-            /*height: 500px;*/
-        }
-
 
         /*yellow circle*/
         #circle-yellow {
-
+            background-color: var(--main-yellow-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+            color: white;
         }
 
         /*green circle*/
         #circle-green {
-
+            background-color: var(--main-green-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+            color: white;
         }
 
         /*blue circle*/
         #circle-blue {
+            background-color: var(--main-blue-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+            color: white;
+        }
 
+        #image-row img {
+            /*border: 7px solid var(--main-darkgrey-color);*/
+            padding: 0;
         }
 
 
@@ -105,22 +119,43 @@
     </div>
     <br>
     <div class="row text-center" id="main-header">
-            <div class="col-12">
-                <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-            </div>
+        <div class="col-12">
+            <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        </div>
     </div>
     <br>
     <div class="row" id="second-header">
-            <div class="col-12 text-center anton-text">
-                <h2>FROM PARK CITY, UTAH</h2>
-            </div>
+        <div class="col-12 text-center anton-text">
+            <h2>FROM PARK CITY, UTAH</h2>
+        </div>
     </div>
     <br>
-    <div class="row" id="color-circles">
-            <button type="button" class="col-6 btn btn-primary btn-circle btn-xl mr-auto" id="circle-red">DESIGN
-            </button>
-            <button type="button" class="col-6 btn btn-primary btn-circle btn-xl ml-auto">Blue</button>
+    <div class="row mx-auto" id="color-circles">
+        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="circle-red">
+            DESIGN
+        </div>
+        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="circle-yellow">
+            DEVELOP
+        </div>
+        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="circle-green">
+            SUPPORT
+        </div>
+        <div class="col-6half mx-auto anton-text d-flex align-items-center justify-content-center m-1" id="circle-blue">
+            HOST
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="row text-center" id="selected-work-row">
+        <p class="col-12 abel-text">SELECTED WORK</p>
+    </div>
+    
+    <div class="row" id="image-row">
+        <img src="img/apple-ipad.jpg" alt="" class="col-12 rounded ml-4 mr-4">
+    </div>
+
+
 </div>
 
 <!-- Optional JavaScript -->
