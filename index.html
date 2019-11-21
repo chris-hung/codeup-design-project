@@ -43,13 +43,19 @@
         /*red circle*/
         #circle-red {
             background-color: var(--main-red-color);
-            /*width: 50px;*/
-            /*height: 50px;*/
-            /*!*padding: 7px 10px;*!*/
+            width: 100%;
+            height: 100%;
+            padding: 7px 10px;
             border-radius: 50%;
             font-size: 10px;
             text-align: center;
+
         }
+
+        #custom-body #color-circles {
+            /*height: 500px;*/
+        }
+
 
         /*yellow circle*/
         #circle-yellow {
@@ -97,29 +103,25 @@
             <a class="nav-link abel-text text-dark" href="#">CONTACT</a>
         </div>
     </div>
-    <div class="row" id="title-row">
+    <br>
+    <div class="row text-center" id="main-header">
+            <div class="col-12">
+                <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+            </div>
+    </div>
+    <br>
+    <div class="row" id="second-header">
+            <div class="col-12 text-center anton-text">
+                <h2>FROM PARK CITY, UTAH</h2>
+            </div>
+    </div>
+    <br>
+    <div class="row" id="color-circles">
+            <button type="button" class="col-6 btn btn-primary btn-circle btn-xl mr-auto" id="circle-red">DESIGN
+            </button>
+            <button type="button" class="col-6 btn btn-primary btn-circle btn-xl ml-auto">Blue</button>
     </div>
 </div>
-<br>
-<div class="row text-center" id="main-header">
-    <div class="col-12">
-        <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-    </div>
-</div>
-<br>
-<div class="row" id="second-header">
-    <div class="col-12 text-center anton-text">
-        <h2>FROM PARK CITY, UTAH</h2>
-    </div>
-</div>
-<br>
-<div class="row text-center mt-3" id="color-circles">
-    <button type="button" class="btn btn-primary btn-circle btn-md col-6" id="circle-red">DESIGN</button>
-    <div class="col-6" id="circle-yellow">DESIGN</div>
-    <div class="col-6" id="circle-green">DESIGN</div>
-    <div class="col-6" id="circle-blue">DESIGN</div>
-</div>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
