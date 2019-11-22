@@ -206,7 +206,7 @@
         }
         #small-hr {
             border-top: 2px solid #ccc;
-            width: 85%;
+            width: 70%;
         }
         #medium-hr {
             border-top: 2px solid #ccc;
@@ -219,17 +219,27 @@
         #main-container {
             max-width: 775px;
         }
-        #heading-container {
+        #large-heading{
+            max-width: 775px;
+        }
 
+        #xs-logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        #custom-body h2 {
+            display: flex;
+            align-items: center;
         }
     </style>
     <title>Codeup Design!</title>
 </head>
 <body id="custom-body">
-<div class="container-fluid text-center" id="heading-container">
+<div class="container-fluid " id="heading-container">
     <div class="row" id="logo-row">
         <!--        xs heading-->
-        <div class="col-12 d-sm-none">
+        <div class="col-12 d-sm-none" id="xs-logo">
             <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
         </div>
         <!--        sm heading-->
@@ -244,11 +254,30 @@
                 <a class="abel-text text-dark p-1" href="#">CONTACT</a>
             </nav>
         </div>
-        <!--        md lg xl heading-->
-        <div class="container d-none d-sm-none d-md-block">
+        <!--        md heading-->
+        <div class="container d-none d-sm-none d-md-block d-lg-none">
             <div class="row d-flex">
                 <div class="col-12" id="med-nav-row">
                     <nav class="container-fluid navbar navbar-expand-large medium-navbar">
+                        <a class="navbar-brand col-6 medium-logo d-flex align-items-center" href="#">
+                            <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
+                            <h2 class="d-inline text-dark abel-text pl-3">codeup design</h2>
+                        </a>
+                        <p class="col-1"></p>
+                        <a class="col-1 abel-text text-dark p-1 pb-2" href="#">SERVICES</a>
+                        <a class="col-1 abel-text text-dark p-1 pl-3 pb-2" href="#">WORK</a>
+                        <a class="col-1 abel-text text-dark p-1 pb-2" href="#">BLOG</a>
+                        <a class="col-1 abel-text text-dark p-1 pb-2" href="#">CONTACT</a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+<!--        lg xl heading-->
+        <div class="container d-none d-sm-none d-md-none d-lg-block">
+            <div class="row d-flex">
+                <div class="col-12">
+                    <nav class="container-fluid navbar navbar-expand-large" id="large-heading">
                         <a class="navbar-brand col-6 medium-logo" href="#">
                             <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
                             <h2 class="d-inline text-dark abel-text pl-3">codeup design</h2>
@@ -282,7 +311,7 @@
     </div>
     <br>
     <div class="row text-center" id="main-header">
-        <div class="col-12">
+        <div class="col-12 text-center">
             <h1 class="anton-text">VISUAL DESIGN & WEB DEVELOPMENT</h1>
         </div>
     </div>
@@ -357,10 +386,10 @@
 
     <br>
     <br>
-    <br>
     <div class="row text-center" id="selected-work-row">
         <p class="col-12 abel-text d-block d-sm-block d-md-none feature-text">SELECTED WORK</p>
         <div class="container-fluid row">
+    <br>
             <div class="col-8 d-flex">
                 <p class="abel-text d-none d-md-block mr-auto selected-work-big">SELECTED WORK</p>
             </div>
