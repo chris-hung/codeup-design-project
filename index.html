@@ -9,7 +9,238 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <style>
+        /*fonts*/
+        @import url('https://fonts.googleapis.com/css?family=Abel|Anton&display=swap');
 
+        :root {
+            --main-bg-color: #F0F0F0;
+            --main-darkgrey-color: #e6e6e6;
+            --main-red-color: #E6563B;
+            --main-yellow-color: #EB9D3A;
+            --main-green-color: #7CB06C;
+            --main-blue-color: #00ABA9;
+        }
+
+        /*body class*/
+        #custom-body {
+            background-color: var(--main-bg-color)
+        }
+
+        /*logo*/
+        #logo-row {
+            background: linear-gradient(to bottom, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 25%, rgba(255, 255, 255, 1) 26%, rgba(255, 255, 255, 1) 74%, rgba(240, 240, 240, 1) 75%, rgba(240, 240, 240, 1) 100%);
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .medium-navbar {
+            padding: .5rem;
+            padding-left: 0;
+        }
+
+        #med-nav-row {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .medium-logo {
+            padding-left: 0;
+        }
+
+        /*abel font items*/
+        .abel-text {
+            font-family: abel, sans-serif;
+        }
+
+        /*anton font items*/
+        .anton-text {
+            font-family: anton, sans-serif;
+        }
+
+        /*red circle*/
+        .circle-red {
+            background-color: var(--main-red-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+        }
+
+        /*yellow circle*/
+        .circle-yellow {
+            background-color: var(--main-yellow-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+        }
+
+        /*green circle*/
+        .circle-green {
+            background-color: var(--main-green-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+        }
+
+        /*blue circle*/
+        .circle-blue {
+            background-color: var(--main-blue-color);
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: .5em solid white;
+        }
+
+        /*little red circle*/
+        .little-circle-red {
+            background-color: var(--main-red-color);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+            /*padding-bottom: .2em;*/
+        }
+
+        /*little yellow circle*/
+        .little-circle-yellow {
+            background-color: var(--main-yellow-color);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+            /*padding-bottom: .2em;*/
+        }
+
+        /*little green circle*/
+        .little-circle-green {
+            background-color: var(--main-green-color);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+            /*padding-bottom: .2em;*/
+        }
+
+        /*little blue circle*/
+        .little-circle-blue {
+            background-color: var(--main-blue-color);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-family: anton, sans-serif;
+            font-size: xx-small;
+            /*padding-bottom: .2em;*/
+        }
+
+        .color-circles-row-1 a, .color-circles-row-2 a {
+            color: white;
+            font-family: anton, sans-serif;
+        }
+
+        .color-circles-row-1 a:hover, .color-circles-row-2 a:hover {
+            cursor: pointer;
+        }
+
+
+        .image-row img {
+            border: 7px solid var(--main-darkgrey-color);
+            padding: 0;
+        }
+
+        #nav-links-row a {
+            font-size: smaller;
+        }
+
+        .custom-card {
+            background-color: var(--main-bg-color);
+            border: none;
+        }
+
+        .card-img {
+            height: 46px;
+            width: 46px;
+        }
+
+        .feature-text-small {
+            font-size: x-small;
+            padding-left: 0;
+        }
+
+        .feature-text {
+            font-size: x-small;
+        }
+
+        .featured-text {
+            font-size: x-small;
+        }
+
+        .selected-work-big {
+            font-size: x-small;
+        }
+
+        #custom-body .feature-text-small {
+            text-align: left;
+            padding-left: 2.5em;
+        }
+
+        #custom-body .featured-text {
+            text-align: left;
+            padding-left: .5em;
+        }
+
+        #custom-body .selected-work-big {
+            text-align: left;
+            padding-left: .5em;
+        }
+
+        #twitter-card p {
+            font-size: .5em;
+        }
+
+        #small-hr {
+            border-top: 2px solid #ccc;
+            width: 70%;
+        }
+
+        #medium-hr {
+            border-top: 2px solid #ccc;
+            width: 100%;
+        }
+
+        .twitter-bird {
+            color: #1DA1F3;
+        }
+
+        #main-container {
+            max-width: 775px;
+        }
+
+        #large-heading {
+            max-width: 775px;
+        }
+
+        #xs-logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        #custom-body h2 {
+            display: flex;
+            align-items: center;
+        }
+        #selected-work-row {
+            margin-top: 1rem;
+        }
+        #stupid-blank-space-chris-idea {
+            height: 75px;
+        }
+    </style>
     <title>Codeup Design!</title>
 </head>
 
