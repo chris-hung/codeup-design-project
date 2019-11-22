@@ -30,8 +30,22 @@
         /*logo*/
         #logo-row {
             background: linear-gradient(to bottom, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 25%, rgba(255, 255, 255, 1) 26%, rgba(255, 255, 255, 1) 74%, rgba(240, 240, 240, 1) 75%, rgba(240, 240, 240, 1) 100%);
+            padding-left: 0;
+            padding-right: 0;
         }
 
+        .medium-navbar{
+            padding: .5rem;
+            padding-left: 0;
+        }
+
+        #med-nav-row{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .medium-logo{
+            padding-left: 0;
+        }
         /*abel font items*/
         .abel-text {
             font-family: abel, sans-serif;
@@ -86,7 +100,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
-            padding-bottom: .2em;
+            /*padding-bottom: .2em;*/
         }
 
         /*little yellow circle*/
@@ -97,7 +111,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
-            padding-bottom: .2em;
+            /*padding-bottom: .2em;*/
         }
 
         /*little green circle*/
@@ -108,7 +122,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
-            padding-bottom: .2em;
+            /*padding-bottom: .2em;*/
         }
 
         /*little blue circle*/
@@ -119,7 +133,7 @@
             border-radius: 50%;
             font-family: anton, sans-serif;
             font-size: xx-small;
-            padding-bottom: .2em;
+            /*padding-bottom: .2em;*/
         }
 
         .color-circles-row-1 a, .color-circles-row-2 a {
@@ -198,6 +212,10 @@
             border-top: 2px solid #ccc;
             width: 100%;
         }
+
+        .twitter-bird{
+            color: #1DA1F3;
+        }
     </style>
     <title>Codeup Design!</title>
 </head>
@@ -223,15 +241,15 @@
         <!--        md lg xl heading-->
         <div class="container d-none d-sm-none d-md-block">
             <div class="row d-flex">
-                <div class="col-12">
-                    <nav class="container-fluid navbar navbar-expand-large">
-                        <a class="navbar-brand col-6" href="#">
+                <div class="col-12" id="med-nav-row">
+                    <nav class="container-fluid navbar navbar-expand-large medium-navbar">
+                        <a class="navbar-brand col-6 medium-logo" href="#">
                             <img src="img/logo.png" alt="logo" height="105px" width="105px" class="rounded-circle"/>
                             <h2 class="d-inline text-dark abel-text pl-3">codeup design</h2>
                         </a>
                         <p class="col-1"></p>
                         <a class="col-1 abel-text text-dark p-1 " href="#">SERVICES</a>
-                        <a class="col-1 abel-text text-dark p-1" href="#">WORK</a>
+                        <a class="col-1 abel-text text-dark p-1 pl-3" href="#">WORK</a>
                         <a class="col-1 abel-text text-dark p-1" href="#">BLOG</a>
                         <a class="col-1 abel-text text-dark p-1" href="#">CONTACT</a>
                     </nav>
@@ -311,16 +329,16 @@
     <!--    buttons for medium, large, x-large views-->
     <div class="container d-none d-sm-none d-md-block d-lg-block d-xl-block">
         <div class="row d-flex justify-content-center no-gutters color-circles-row-1">
-            <div class="col-6half mx-3 anton-text d-flex align-items-center justify-content-center circle-red">
+            <div class="col-6half mx-2 anton-text d-flex align-items-center justify-content-center circle-red">
                 <a href="#">DESIGN</a>
             </div>
-            <div class="col-6half mx-3 anton-text d-flex align-items-center justify-content-center circle-yellow">
+            <div class="col-6half mx-2 anton-text d-flex align-items-center justify-content-center circle-yellow">
                 <a href="#">DEVELOP</a>
             </div>
-            <div class="col-6half mx-3 anton-text d-flex align-items-center justify-content-center circle-green">
+            <div class="col-6half mx-2 anton-text d-flex align-items-center justify-content-center circle-green">
                 <a href="#">SUPPORT</a>
             </div>
-            <div class="col-6half mx-3 anton-text d-flex align-items-center justify-content-center circle-blue">
+            <div class="col-6half mx-2 anton-text d-flex align-items-center justify-content-center circle-blue">
                 <a href="#">HOST</a>
             </div>
         </div>
@@ -511,7 +529,7 @@
                         <!--card 4/twitter card-->
                         <div class="card custom-card" id="twitter-card">
                             <div class="d-flex">
-                                <i class="fab fa-twitter text-primary"></i>
+                                <i class="fab fa-twitter twitter-bird"></i>
                                 <h6 class="abel-text pl-2">LAST TWEET</h6>
                             </div>
 
